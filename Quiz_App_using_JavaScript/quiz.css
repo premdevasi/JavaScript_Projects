@@ -1,4 +1,4 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -50,6 +50,57 @@ li{
     bottom: 0;
     padding: 8px;
     border-radius: 5px;
+} */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(81, 118, 151);
+}
 
+.container{
+    height: 400px;
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 7px 3px black;
+    position: relative;
+    border-radius: 10px;
+}
+
+#quiz-h2{
+    text-align: center;
+    padding: 15px;
+    font-size: 2rem;
+}
+
+ul{
+    list-style: none;
+    margin-left: 30px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.answer{
+    margin-top: 30px;
+}
+
+#sumbit{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: coral;
+    color: white;
+}
