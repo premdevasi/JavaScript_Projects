@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: beige;
+}
+
+.container{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    height: 166px;;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.month{
+    background-color: red;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.day{
+    margin-top: 7px;
+   
+}
+
+.date{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+

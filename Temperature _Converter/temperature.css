@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(113, 82, 143);
+}
+
+.container {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    height: 280px;
+}
+
+.header {
+    background-color: blue;
+    color: white;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.celsiusTmp {
+    padding-top: 10px;
+}
+
+#celsiusTmp_input {
+    margin-top: 5px;
+    padding: 4px;
+    width: 80%;
+}
+
+.kelvinTmp {
+    padding-top: 10px;
+}
+
+#kelvinTmp_input{
+    margin-top: 5px;
+    padding: 4px;
+    width: 80%;
+}
+
+.farenheitTmp{
+    padding-top: 10px;
+}
+
+#farenheitTmp_input{
+    margin-top: 5px;
+    padding: 4px;
+    width: 80%;
+}
