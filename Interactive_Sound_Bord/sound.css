@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(58, 54, 85);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.button {
+    background-color: rgb(38, 151, 204);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(28, 131, 184);
+}
+
+.applause {
+    background-color: #4CAF50;
+}
+
+.boo {
+    background-color: #f44336;
+}
+
+.gasp {
+    background-color: #ff9800;
+}
+
+.victory {
+    background-color: #e91e63;
+}
+
+.tada {
+    background-color: #9c27b0;
+}
+
+.wrong {
+    background-color: #2196F3;
+}

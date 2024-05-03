@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+.innerbox1{
+    border: 2px solid black;
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerbox2{
+    border: 2px solid black;
+    height: 150px;
+    width: 300px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
