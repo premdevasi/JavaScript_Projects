@@ -1,0 +1,82 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background: url(loginBac.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    color: #fff;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    max-width: 300px;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 300px;
+    
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #999;
+}
+
+.input input::placeholder {
+    color: #fff;
+}
+
+.check{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 300px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}

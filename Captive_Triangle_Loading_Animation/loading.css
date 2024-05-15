@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.parent {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-right: 50px solid #fff;
+    top: 0;
+    left: 0;
+}
+
+.triangle1 {
+    animation: rotateTriangle1 2s infinite linear;
+}
+
+.triangle2 {
+    animation: rotateTriangle2 2s infinite linear;
+    animation-delay: 1s; /* Delaying the animation of the second triangle by 1 second */
+}
+
+@keyframes rotateTriangle1 {
+    0%, 25% {
+        transform: rotate(0deg);
+    }
+    50%, 75% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateTriangle2 {
+    0%, 25% {
+        transform: rotate(0deg);
+    }
+    50%, 75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
