@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(38,76,171);
+background: linear-gradient(90deg, rgba(38,76,171,1) 0%, rgba(146,71,163,1) 0%, rgba(44,101,153,1) 54%, rgba(14,107,112,1) 88%);
+position: relative;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+#heading{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    /* color: #fbbf24;  */
+    color: #f1dddd;
+    font-size: 2.25rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#underLine{
+    height: 3px;
+    width: 26%;
+    background-color: #fbbf24;
+    position: absolute;
+    top: 141px;
+    /* left: 396px; */
+    margin-bottom: 10px;
+}
+
+#search-form {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    background-color: #434989; /* Example color */
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+#search-box {
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background-color:#fff;
+    font-size: 18px;
+    padding: 0 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 48px -3px rgba(0,0,0,0.79);
+-moz-box-shadow: 3px 3px 48px -3px rgba(0,0,0,0.79);
+box-shadow: 3px 3px 48px -3px rgba(0,0,0,0.79);
+}
+#search-button {
+    padding: 0;
+    height: 100%;
+    background-color: #ff3929; /* Example color */
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    width: 20%;
+    border-radius: 10px;
+    webkit-box-shadow: 3px 3px 48px -3px rgba(0,0,0,0.79);
+  -moz-box-shadow: 3px 3px 48px -3px rgba(0,0,0,0.79);
+   box-shadow: 3px 3px 48px -3px rgba(0,0,0,0.79);
+}
+
+/* Search Result */
+#search-result {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: 100px auto 50px;
+    gap: 40px;
+}
+
+#search-result img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius:5px;
+
+}
+
+
+/* Show More Button */
+#show-more-btn {
+    display: flex;
+    background-color: #ff3929; /* Example color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+    outline: none;
+    border-radius: 9px;
+    border: none;
+    -webkit-box-shadow: 3px 3px 48px -3px rgba(0, 0, 0, 0.79);
+    -moz-box-shadow: 3px 3px 48px -3px rgba(0, 0, 0, 0.79);
+    box-shadow: 3px 3px 48px -3px rgba(0, 0, 0, 0.79);
+    font-weight: bold;
+}

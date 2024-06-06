@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- background-container start from here -->
+    <div class="bg-custom-gradient h-screen flex items-center justify-center" id="background-container">
+        <!-- main container start from here -->
+        <div class="h-[600px] w-[400px] bg-[url('container_img.png')] bg-cover rounded-xl " id="container">
+            <!-- search-container start from here -->
+            <div class="mt-10 flex items-center justify-center gap-4" id="search-container">
+                <input type="text" placeholder="enter city Name" class="p-2 rounded-3xl border-none outline-none" id="search-bar">
+                <div class="bg-white h-10 w-10 flex items-center justify-center rounded-3xl">
+                    <button id="search-button"> <i class="fa-solid fa-magnifying-glass" class=""></i></button>
+                </div>
+            </div>
+            <!-- search-container End  here -->
+
+            <!-- weather container start from here -->
+            <div class="flex items-center justify-center flex-col mt-5">
+                <div>
+                    <img id="weather-img" src="weather-icon.png" alt="" class="h-[250px]">
+                </div>
+                <div class="text-white  text-2xl flex flex-col items-center justify-center gap-2">
+                    <p  class="text-5xl font-bold"><span id="weather-temperature">32</span>°c</p>
+                    <p id="city-name" class="font-semibold text-slate-300">New York</p>
+                </div>
+
+            </div>
+            <!-- weather container End here -->
+
+            <!-- Humidity-speed container start from here -->
+            <div class="flex items-center justify-around mt-10 text-white">
+                <!-- Humidity container start from here -->
+                <div class="flex items-center gap-2">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            id="Layer_1" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64"
+                            xml:space="preserve" width="64px" height="64px">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <g>
+                                        <path style="fill:#B4CCB9"
+                                            d="M32,6C32,6,8,28.792,8,45c0,13.233,10.767,24,24,24s24-10.767,24-24 C56,28.792,32,6,32,6z">
+                                        </path>
+                                    </g>
+                                    <path style="fill:#394240"
+                                        d="M32,70c-13.233,0-24-10.767-24-24c0-5.955,3.752-13.759,11.146-22.351 c5.412-6.471,10.818-11.481,10.97-11.628l1.884-1.846l1.884,1.846c0.152,0.147,5.558,5.157,10.97,11.628 C52.248,32.241,56,40.045,56,46C56,59.233,45.233,70,32,70z M32,9.328C28.145,13.182,10,31.217,10,46c0,12.15,9.85,22,22,22 s22-9.85,22-22C54,31.217,35.855,13.182,32,9.328z">
+                                    </path>
+                                    <g>
+                                        <path style="fill:#394240"
+                                            d="M38.5,53c-1.515,0-3.184-0.335-5-1.276c-4.882-2.441-8.974-2.472-13.432-0.096l-1.136-2.484 c4.957-2.268,9.801-2.231,15.068,0.117c3.789,1.896,6.929,1.29,10.469-0.191l1.295,2.401C43.288,52.397,40.711,53,38.5,53z">
+                                        </path>
+                                    </g>
+                                    <g>
+                                        <path style="fill:#394240"
+                                            d="M38.5,43c-1.515,0-3.184-0.335-5-1.276c-4.882-2.441-8.974-2.472-13.432-0.096l-1.136-2.484 c4.957-2.268,9.801-2.231,15.068,0.117c3.789,1.896,6.929,1.29,10.469-0.191l1.295,2.401C43.288,42.397,40.711,43,38.5,43z">
+                                        </path>
+                                    </g>
+                                    <g>
+                                        <path style="fill:#394240"
+                                            d="M38.5,33c-1.515,0-3.184-0.335-5-1.276c-4.882-2.441-8.974-2.472-13.432-0.096l-1.136-2.484 c4.957-2.268,9.801-2.231,15.068,0.117c3.789,1.896,6.929,1.29,10.469-0.191l1.295,2.401C43.288,32.397,40.711,33,38.5,33z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-xl font-bold"><span id="humidity-parcentage">50</span>%</p>
+                        <p class="text-slate-300 font-semibold">Humidity</p>
+                    </div>
+                </div>
+                <!-- Humidity container End here -->
+
+                <!-- Wind Speed container start from here -->
+                <div class="flex items-center gap-2">
+                    <div>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" xml:space="preserve"
+                            width="64px" height="64px">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <!-- Cloud Path -->
+                                <path fill="#FFFFFF" d="M51,26c-0.678,0-1.354,0.037-2.024,0.1C46.967,21.355,42.861,18,38,18
+                                c-4.32,0-8.113,2.621-9.76,6.456C26.865,23.51,26.438,23.5,26,23.5c-5.206,0-9.5,4.294-9.5,9.5s4.294,9.5,9.5,9.5h25
+                                c4.411,0,8-3.589,8-8S55.411,26,51,26z">
+                                </path>
+                                <!-- Wind Lines -->
+                                <path fill="#000000" d="M11.999,32c-0.737,0-1.461,0.079-2.166,0.227C8.662,30.161,7.145,29,5.5,29c-2.481,0-4.5,2.019-4.5,4.5
+                                s2.019,4.5,4.5,4.5H18c0.553,0,1-0.447,1-1s-0.447-1-1-1H5.5c-1.378,0-2.5-1.122-2.5-2.5S4.122,31,5.5,31
+                                c1.31,0,2.402,0.99,2.484,2.296c0.015,0.257,0.146,0.497,0.36,0.642c0.215,0.145,0.482,0.187,0.729,0.112
+                                C9.721,34.012,10.855,34,11.999,34H31c0.553,0,1-0.447,1-1s-0.447-1-1-1H11.999z">
+                                </path>
+                                <path fill="#000000" d="M32.001,40c-0.742,0-1.468,0.08-2.176,0.229C29.664,38.161,28.145,37,26.5,37
+                                c-2.481,0-4.5,2.019-4.5,4.5s2.019,4.5,4.5,4.5H42c0.553,0,1-0.447,1-1s-0.447-1-1-1H26.5c-1.378,0-2.5-1.122-2.5-2.5
+                                s1.122-2.5,2.5-2.5c1.31,0,2.403,0.99,2.484,2.296c0.015,0.257,0.146,0.497,0.36,0.642c0.215,0.145,0.482,0.187,0.729,0.112
+                                C29.721,42.013,30.856,42,32.001,42H50c0.553,0,1-0.447,1-1s-0.447-1-1-1H32.001z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-xl font-bold"><span id="wind-speed">13</span> km/h</p>
+                        <p class="text-slate-300 font-semibold">Wind Speed</p>
+                    </div>
+                </div>
+                <!-- Wind Speed container End here -->
+            </div>
+            <!-- Humidity-speed container Ends here -->
+        </div>
+        <!-- main container End here -->
+    </div>
+    <!-- background-container start End here -->
+    <script src="script.js"></script>
+</body>
+
+</html>
