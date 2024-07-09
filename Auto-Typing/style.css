@@ -1,0 +1,35 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: black;
+     flex-direction: column;
+}
+
+h1{
+    color: white;
+    font-family: system-ui;
+}
+
+span{
+    color: brown;
+    display: inline-flex;
+    align-items: center;
+}
+
+span::after{
+    content: '';
+    display: inline-block;
+    height: 31px;
+    width: 1px;
+    background-color: brown;
+    margin-left: 4px;
+}

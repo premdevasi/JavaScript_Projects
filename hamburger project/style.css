@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    background-color: #F6F0EB;
+}
+
+.nav{
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-left: 59px;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-right: 68px;
+}
+
+.options a {
+    text-decoration: none;
+    color: #492118;
+}
+
+
+.close-icon{
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: -4px;
+    cursor: pointer;
+    }
+
+.hamburger-menu-container {
+    overflow: hidden;
+    position: relative;
+    height: 151px;
+    width: 70px;
+    display: none;
+}
+
+.hamburger {
+    background-color: #fff;
+    height: 199px;
+    width: 192px;
+    position: absolute;
+    top: -99px;
+    right: -115px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    font-size: 1.1rem;
+    position: absolute;
+    bottom: 19px;
+    left: 51px;
+    cursor: pointer;
+}
+
+.image-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 70px;
+    padding: 0 10px;
+}
+
+.hero-image{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    border-radius: 41px;
+}
+
+.hero-image h4 {
+    color: #492118;
+    font-size: 1.2rem;
+    font-family: cursive;
+}
+
+#Image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    font-family: sans-serif;
+    color: #492118;
+}
+
+#rounded{
+    border-radius: 30px;
+}
+
+.made-with{
+    height: 100PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-family: cursive;
+    position: relative;
+}
+
+#go-top{
+    position: absolute;
+    right: 186px;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#go-top a {
+    color: #492118;
+}
+
+@media (max-width: 1100px) {
+    .hero-image img {
+        height: 400px;
+    }
+    #rounded{
+        height: 400px;
+    }
+}
+
+@media (max-width:1030px) {
+    .options a{
+        font-size:0.8rem;
+    }
+    
+}
+
+@media (max-width:870px) {
+
+    .options{
+        gap: 30px;
+    }
+
+    .options a{
+        font-size:0.5rem;
+    }
+
+   .logo img{
+    height: 25px;
+   }
+
+   .hero-image img {
+    height: 200px;
+}
+
+   .hero-image h4 {
+  font-size: .7rem;
+}
+
+.heading{
+    font-size: .8rem;
+}
+
+#rounded{
+    height: 200px;
+}
+
+#go-top {
+    font-size: .7rem;
+    right: 40px;
+}
+}
+
+@media (max-width:550px) {
+    .options{
+        gap: 10px;
+    }
+
+    .options a{
+        font-size:0.4rem;
+    }
+
+    .logo img{
+        height: 18px;
+       }
+
+       .image-section{
+        gap: 40px;
+       }
+
+       .hero-image img {
+        height: 150px;
+        border-radius: 20px;
+    }  
+
+    .hero-image h4 {
+        font-size: .5rem;
+      }
+
+      .heading{
+        font-size: .6rem;
+    }
+
+    #Image{
+        gap: 13px;
+    }
+
+    #rounded{
+        height: 150px;
+        border-radius: 20px;
+    }
+
+    .made-with{
+        height: 50px;
+    }
+
+    #go-top {
+        font-size: .5rem;
+    }
+
+}
+
+@media (max-width:412px) {
+    .options{
+        gap: 8px;
+        padding-right: 20px;
+    }
+
+    .options a{
+        font-size:0.3rem;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+    .logo img{
+        height: 13px;
+       }
+    
+       .image-section{
+        gap: 30px;
+       }
+
+       .hero-image{
+        gap: 5px;
+       }
+
+       .hero-image img {
+        height: 100px;
+        border-radius: 10px;
+    }  
+    
+    .hero-image h4 {
+        font-size: .3rem;
+      }
+
+      .heading{
+        font-size: .4rem;
+    }
+
+    #Image{
+        gap: 10px;
+    }
+
+    #rounded{
+        height: 100px;
+        border-radius: 10px;
+    }
+
+    #go-top {
+        font-size: .4rem;
+        right: 20px;
+    }
+}
+
+@media (max-width:255px) {
+    .options{
+        padding-right: 5px;
+    }
+
+    .options a{
+        font-size:0.3rem;
+    }
+
+    .logo {
+        padding-left: 10px;
+    }
+
+    .image-section{
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .hero-image img {
+        height: 60px;
+        border-radius: 5px;
+    }  
+
+    .hero-image h4 {
+        font-size: .3rem;
+      }
+
+
+      .heading{
+        font-size: .4rem;
+    }
+
+    #Image{
+        gap: 5px;
+    }
+
+    #rounded{
+        height: 60px;
+        border-radius: 5px;
+    }
+
+    .made-with{
+        height: 20px;
+    }
+
+    #go-top {
+        font-size: .3rem;
+        right: 10px;
+    }
+
+    .made-with p{
+    font-size: .2rem;
+    }
+}
+
+@media (max-width:310px) {
+    .nav{
+        background-color: #c5c0bc5e;
+        backdrop-filter: blur(8px);
+        position: sticky;
+        top: 0;
+    }
+
+    .options{
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 10px 29px 12px 10px;
+      align-items: start;
+      position: absolute;
+      top: 15px;
+      right: 10px;
+      text-align: start;
+      display: none;
+    }
+
+    .close-icon{
+    display: block;
+    }
+
+    .options a{
+        font-size:0.4rem;
+    }
+    
+    .logo img{
+        height: 20px;
+       }
+
+       .hamburger-menu-container {
+        display: block;
+    }
+
+    
+
+    .menu-open .options{
+        display: flex;
+    }
+
+    .menu-open .hamburger-menu-container{
+        display: none;
+    }
+}
+
+@media (max-width:110px) {
+    .image-section{
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .hero-image{
+        gap: 3px;
+    }
+
+    .hero-image img {
+        height: 40px;
+        border-radius: 4px;
+    }  
+
+    #rounded{
+        height: 40px;
+        border-radius: 3px;
+    }
+
+    #go-top {
+        font-size: .2rem;
+        right: 5px;
+    }
+
+}
